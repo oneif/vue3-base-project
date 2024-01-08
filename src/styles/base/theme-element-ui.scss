@@ -1,0 +1,116 @@
+/**
+ * 修改主题 颜色，使用变量形式
+ * --primary-color 主题颜色
+ * --hover-color 次级颜色
+ * 根据 css 属性功能归纳
+ */
+
+/**
+ * background-color
+ *
+ */
+.el-button--primary,
+.el-radio__input.is-checked .el-radio__inner,
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-switch.is-checked .el-switch__core,
+.el-date-table td.end-date span,
+.el-date-table td.start-date span,
+.el-tabs__active-bar {
+  background-color: var(--primary-color);
+}
+
+/**
+ * background-color:hover
+ *
+ */
+.el-button--primary,
+.el-radio__input.is-checked .el-radio__inner {
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+/**
+ * border-color
+ *
+ */
+.el-button--primary,
+.el-radio__input.is-checked .el-radio__inner,
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-focus .el-checkbox__inner,
+.el-select .el-input.is-focus .el-input__inner,
+.el-cascader .el-input .el-input__inner:focus,
+.el-cascader .el-input.is-focus .el-input__inner,
+.el-switch.is-checked .el-switch__core,
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover,
+.el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: var(--primary-color);
+}
+
+/**
+ * border-color:hover
+ *
+ */
+.el-button--primary,
+.el-radio__inner,
+.el-checkbox__inner {
+  &:hover {
+    border-color: var(--hover-color);
+  }
+}
+
+/**
+ * color
+ *
+ */
+.el-link.el-link--primary,
+.el-radio__input.is-checked + .el-radio__label,
+.el-checkbox__input.is-checked + .el-checkbox__label,
+.el-select-dropdown__item.selected,
+.el-cascader-node.in-active-path,
+.el-cascader-node.is-active,
+.el-cascader-node.is-selectable.in-checked-path,
+.el-date-table td.today span,
+.el-pager li.active,
+.el-tabs__item.is-active,
+.el-tabs__item:hover,
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  color: var(--primary-color);
+}
+
+/**
+ * color:hover
+ *
+ */
+.el-link.el-link--primary,
+.el-radio__input.is-checked + .el-radio__label,
+.el-date-table td.available,
+.el-pager li,
+.el-pagination button {
+  &:hover {
+    color: var(--hover-color);
+  }
+}
+
+/**
+ * focus
+ *
+ */
+.el-input__inner,
+.el-select .el-input__inner {
+  &:focus {
+    border-color: var(--primary-color);
+  }
+}
+
+/**
+ * 伪类相关
+ *
+ */
+.el-link.el-link--default::after,
+.el-link.el-link--primary.is-underline:hover::after,
+.el-link.el-link--primary::after {
+  border-color: var(--primary-color);
+}
