@@ -1,6 +1,5 @@
-import type { Directive } from 'vue'
 // 节流指令 使用=> <el-button v-throttle="1000">不指定时间默认3秒</el-button>
-export const throttle: Directive = (app: any) => {
+export const throttle = (app: any) => {
   app.directive('throttle', {
     //代表使用这个全局自定义指令的DOM组件挂载完毕的时候会执行一次
     // el:使用自定义指令的DOM节点 options:配置项可以拿到使用自定义指令时传入的值
