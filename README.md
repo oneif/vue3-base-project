@@ -1,6 +1,6 @@
 # vue3-base-project
 
-一个基于vue3+ts的脚手架
+一个基于vue3+ts的脚手架，支持element plus组件自动导入、SvgIcon组件、自定义节流指令
 
 ## 安装依赖
 
