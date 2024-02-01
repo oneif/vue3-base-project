@@ -8,7 +8,7 @@ import router from './router'
 import { throttle } from '@/directives/index'
 // svg
 import 'virtual:svg-icons-register'
-import SvgIcon from '@/components/SvgIcon/index.vue'
+import SvgIcon from '@/components/SvgIcon.vue'
 
 const app = createApp(App)
 
